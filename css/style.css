@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 245, 235);
+}
+
+.header{
+    width: 80%;
+    height: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: black dashed 2px;
+}
+
+.img-header{
+   flex-grow: 1;
+}
+.img-header img{
+    height: 92px;
+    width: 150px;
+    justify-content: flex-start;
+}
+.ul-header{
+    flex-grow: 4;
+}
+
+.ul-header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 180px;
+    font-size: 30px;  
+}
+.ul-header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.i-header{
+    flex-grow: 2;
+}
+.i-header i{
+    color: black;
+    font-size: 28px;
+    margin: 0 20px;
+}
+
+.image-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-home img{
+    width: 1266px;
+    height: 490px;
+}
+
+.image-div{
+    position: absolute;
+}
+.image-div p{
+    margin-top: -225px;
+    font-size: 45px;
+}
+.image-div button{
+    width: 125px;
+    height: 50px;
+}
+
+/* ///////////////////////// */
+.container-section1-homepage{
+    position: relative;
+}
+
+.h2-section1-homepage{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 45px;
+}
+
+.line-container-section1-homepage{
+    background-color: rgb(27, 98, 179);
+    width: 225px;
+    height: 5px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50% ,-50% );
+    transition: 1s;
+}
+
+.line-container-section1-homepage:hover{
+    width: 450px;
+    transition: 1s ease;
+}
+/* //////////////////////////////// */
+
+
+.section2-homepage{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,350px);
+    margin-top: 50px;
+    grid-gap: 20px 20px;
+    text-align: center;
+    
+}
+.div-section2-homepage{
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dshadow:hover{
+    box-shadow: 8px 8px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.div5s2-homepage{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.dhover img{
+    width: 250px;
+    height: 250px;
+}
+
+.hidden-button{
+    float: right;
+    margin-top: -35px;
+    margin-right: 15px;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(95, 91, 92);
+    color: white;
+    font-size: 30px;
+}
+.dhover:hover .hidden-button{
+    visibility: visible;   
+}
+ .normal-p {
+    font-size: 20px;
+    color: rgb(105, 105, 105);
+ }
+ .bold-p{
+    font-size: 28px;
+    font-weight: 800;
+ }
+
+ .div6s2-homepage{
+    background-image: url(../images/1962\ Chevrolet\ Corvette\ Convertible.jpg);
+    background-repeat: no-repeat;
+ }
+ .div7s2-homepage{
+    background-image: url(../images/Vintage\ Aesthetic.jpg);
+    background-repeat: no-repeat;
+ }
+
+ .heading-d5{
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 2px;
+ }
+ .pd5{
+    font-size: 22px;
+    letter-spacing: 1px;
+ }
+
+ .icon-section2{
+    margin-top: 35px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1.5s;
+ }
+
+ .iconss2{
+    font-size: 35px;
+    text-align: center;
+ }
+
+.iconss2 p{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.iconss2:hover i{
+    transition: 1.5s ease;
+    color: rgb(160, 55, 55);
+    transform: rotate(360deg);
+}
+/* ///////////////////////////////// */
+
+.container-section3{
+    position: relative;
+}
+
+.h2-section3{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 45px;
+}
+
+.line-container-section3{
+    background-color: rgb(27, 98, 179);
+    width: 225px;
+    height: 5px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50% ,-50% );
+    transition: 1s;
+}
+
+.line-container-section3:hover{
+    width: 390px;
+    transition: 1s ease;
+}
+
+/* /////////////////////////////// */
+
+.contain1-s3, .contain2-s3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.main1, .main2{
+    position: relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.main1, .main2, .front, .back{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+}
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    border: 10px solid black;
+}
+.front{
+    z-index: 1;
+    text-align: center;
+}
+.back{
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 45px;
+}
+.back i{
+    margin-top: 150px;
+}
+.main1:hover, .main2:hover{
+    transform: rotateY(180deg);
+}
+.front img{
+    width: 90%;
+    height: 240px;
+    margin-top: 20px;
+}
+.front p{
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
